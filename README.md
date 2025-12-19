@@ -1,16 +1,69 @@
-# pol
+#API FOOTBALL_APP
 
-A new Flutter project.
+Aplikacja mobilna, wyświetlająca ligi piłkarskie
+oraz szczegóły wybranej ligi na podstawie danych z publicznego REST API.
+Aplikacja obsługuje tryb offline, wyszukiwanie, sortowanie oraz integrację
+z Firebase.
 
-## Getting Started
+------------------------------------------------------------------------------
+#FUNKCJONALNOSCI
 
-This project is a starting point for a Flutter application.
+1. Lista lig piłkarskich
+2. Wyszukiwanie lig po nazwie
+3. Sortowanie lig (A–Z, kraj)
+4. Widok szczegółów ligi
+5. Pobieranie danych z REST API
+6. Obsługa błędów i ekranu ładowania
+7. Tryb offline (cache danych lokalnie)
+8. Firebase Analytics (custom eventy)
+9. Firebase Crashlytics (raportowanie błędów)
 
-A few resources to get you started if this is your first Flutter project:
+------------------------------------------------------------------------------
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#API
+
+API-Football  
+https://www.api-football.com/documentation-v3
+
+Endpointy:
+- `/leagues` – (lista lig)
+- `/teams?league={id}&season=2023` – (szczegóły ligi (drużyny))
+
+------------------------------------------------------------------------------
+
+
+#ARCHITEKTURA
+
+Projekt oparty o:
+- UI: `screens/`, `widgets/`
+- Logika: `ViewModel`
+- Dane: `ApiService`, `Cache`, `NetworkInfo`
+
+------------------------------------------------------------------------------
+#FIREBASE
+
+- Firebase Analytics – 3 custom eventy:
+  - `app_opened`
+  - `league_selected`
+  - `search_used`
+- Firebase Crashlytics
+- Firebase App Distribution
+
+------------------------------------------------------------------------------
+
+#URUCOMIENIE
+
+
+```bash
+$Zainstaluj $zależności:
+flutter pub get
+$Uruchom $aplikację:
+flutter run
+
+------------------------------------------------------------------------------
+
+#Wspierane platformy
+Android
+iOS
+
