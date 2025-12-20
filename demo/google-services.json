@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "262959131360",
+    "project_id": "flutter-api-football",
+    "storage_bucket": "flutter-api-football.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262959131360:android:1758cbb9693b1ed4ab3e85",
+        "android_client_info": {
+          "package_name": "com.example.api_football_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjQujkdgjQe9UcDDq073fjnMTXfR4a3qU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
